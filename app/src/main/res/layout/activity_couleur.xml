@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".couleur"
+    android:gravity="top">
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:text="Couleur"
+        android:textSize="20dp"
+        android:gravity="left"
+        android:padding="8dp"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/c1"
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:text="ROUGE"
+            android:layout_marginRight="5dp"
+            android:textColor="#FFFF" />
+        <Button
+            android:id="@+id/c2"
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:text="BLEU"
+            android:textColor="#FFFF" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/c3"
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:text="JAUNE"
+            android:layout_marginRight="5dp"
+            android:textColor="#FFFF" />
+        <Button
+            android:id="@+id/c4"
+            android:layout_width="207dp"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            android:text="VERT"
+            android:textColor="#FFFF" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/espaceTest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="Espace de test"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

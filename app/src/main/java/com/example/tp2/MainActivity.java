@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.l4);
 
-        // Initialisation des composants
         texte1 = findViewById(R.id.texte1);
         texte2 = findViewById(R.id.texte2);
         resultat = findViewById(R.id.res);
@@ -33,26 +32,21 @@ public class MainActivity extends AppCompatActivity {
         division = findViewById(R.id.r4);
         calculer = findViewById(R.id.btn);
 
-        // Gestion du clic sur le bouton Calculer
         calculer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Récupération des valeurs des champs de texte
                 String val1 = texte1.getText().toString();
                 String val2 = texte2.getText().toString();
 
-                // Vérification si les champs sont vides
                 if (TextUtils.isEmpty(val1) || TextUtils.isEmpty(val2)) {
                     Toast.makeText(MainActivity.this, "Champs vide", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
-                // Conversion des valeurs en nombres
                 double nombre1 = Double.parseDouble(val1);
                 double nombre2 = Double.parseDouble(val2);
                 double res = 0;
 
-                // Vérification de l'opération sélectionnée
                 int selectedId = radioGroup.getCheckedRadioButtonId();
                 if (selectedId == R.id.r1) {
                     res = nombre1 + nombre2;  // Addition
@@ -72,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                // Affichage du résultat dans l'EditText du résultat
                 resultat.setText(String.valueOf(res));
             }
         });
